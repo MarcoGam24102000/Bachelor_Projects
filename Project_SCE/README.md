@@ -55,6 +55,3 @@ This project utilizes FreeRTOS to manage tasks for monitoring various sensors an
 
 Contributions to improve the codebase or add features are welcome. Please fork the repository, make your changes, and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
