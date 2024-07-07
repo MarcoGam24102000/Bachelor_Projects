@@ -1,0 +1,425 @@
+Archive member included because of file (symbol)
+
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+                              common.o (__udivmodhi4)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o (exit)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                              RFID_Reader.o (__do_copy_data)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                              RFID_Reader.o (__do_clear_bss)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(itoa.o)
+                              RFID_Reader.o (itoa)
+c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+                              c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(itoa.o) (strrev)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+LOAD RFID_Reader.o
+LOAD common.o
+LOAD uart.o
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x3d2
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_3
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_19
+                0x000000a2                __vector_7
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_14
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_18
+                0x000000a2                __vector_20
+ .text          0x000000a6      0x1c0 RFID_Reader.o
+                0x0000017e                CriticalSegment
+                0x000000a6                __vector_5
+                0x00000194                main
+ .text          0x00000266       0x54 common.o
+                0x00000266                baseconv
+ .text          0x000002ba       0x8a uart.o
+                0x000002ba                USART_init
+                0x0000031c                USART_tx_P
+                0x000002f2                USART_tx
+                0x00000302                USART_tx_S
+                0x00000336                USART_rx
+ .text          0x00000344        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000344        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text          0x00000344        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000344        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000344       0x42 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(itoa.o)
+                0x00000344                itoa
+ .text          0x00000386       0x20 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+                0x00000386                strrev
+                0x000003a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000003a6       0x28 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+                0x000003a6                __udivmodhi4
+ .text.libgcc   0x000003ce        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000003ce        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000003ce        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+                0x000003ce                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000003ce        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+                0x000003ce                exit
+                0x000003ce                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000003ce        0x4 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000003d2                _etext = .
+
+.data           0x00800100       0x34 load address 0x000003d2
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+ .data          0x00800100       0x22 RFID_Reader.o
+ .data          0x00800122       0x12 common.o
+ .data          0x00800134        0x0 uart.o
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .data          0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800134                . = ALIGN (0x2)
+                0x00800134                _edata = .
+                0x00800134                PROVIDE (__data_end, .)
+
+.bss            0x00800134       0x20
+                0x00800134                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800134        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00800134        0xf RFID_Reader.o
+ .bss           0x00800143       0x11 common.o
+ .bss           0x00800154        0x0 uart.o
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(itoa.o)
+ .bss           0x00800154        0x0 c:/winavr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/avr5\libc.a(strrev.o)
+ *(.bss*)
+ *(COMMON)
+                0x00800154                PROVIDE (__bss_end, .)
+                0x000003d2                __data_load_start = LOADADDR (.data)
+                0x00000406                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800154        0x0
+                0x00800154                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800154                PROVIDE (__noinit_end, .)
+                0x00800154                _end = .
+                0x00800154                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x60
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 RFID_Reader.o
+ .debug_aranges
+                0x00000020       0x20 common.o
+ .debug_aranges
+                0x00000040       0x20 uart.o
+
+.debug_pubnames
+                0x00000000       0xb6
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x3e RFID_Reader.o
+ .debug_pubnames
+                0x0000003e       0x1f common.o
+ .debug_pubnames
+                0x0000005d       0x59 uart.o
+
+.debug_info     0x00000000      0x63c
+ *(.debug_info)
+ .debug_info    0x00000000      0x362 RFID_Reader.o
+ .debug_info    0x00000362       0xd7 common.o
+ .debug_info    0x00000439      0x203 uart.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x395
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x1ad RFID_Reader.o
+ .debug_abbrev  0x000001ad       0xa3 common.o
+ .debug_abbrev  0x00000250      0x145 uart.o
+
+.debug_line     0x00000000      0x461
+ *(.debug_line)
+ .debug_line    0x00000000      0x25d RFID_Reader.o
+ .debug_line    0x0000025d       0x88 common.o
+ .debug_line    0x000002e5      0x17c uart.o
+
+.debug_frame    0x00000000       0xc0
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x40 RFID_Reader.o
+ .debug_frame   0x00000040       0x20 common.o
+ .debug_frame   0x00000060       0x60 uart.o
+
+.debug_str      0x00000000      0x1da
+ *(.debug_str)
+ .debug_str     0x00000000      0x146 RFID_Reader.o
+                                0x17f (size before relaxing)
+ .debug_str     0x00000146       0x21 common.o
+                                 0xd2 (size before relaxing)
+ .debug_str     0x00000167       0x73 uart.o
+                                0x135 (size before relaxing)
+
+.debug_loc      0x00000000      0x227
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x128 RFID_Reader.o
+ .debug_loc     0x00000128       0x68 common.o
+ .debug_loc     0x00000190       0x97 uart.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(RFID_Reader.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x78
+ .debug_ranges  0x00000000       0x48 RFID_Reader.o
+ .debug_ranges  0x00000048       0x30 uart.o
