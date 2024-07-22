@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>studyKPI_1500MHz</name>
+    <Placemark>
+      <Snippet maxLines="0"> </Snippet>
+      <description> </description>
+      <name>Point 1</name>
+      <Point>
+        <coordinates>-8.8085,39.74331367,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
